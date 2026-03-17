@@ -1,0 +1,10 @@
+[package]
+name = "lut_gen"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.102"
+rand = "0.10.0"
+ril = { version = "0.10.3", features = ["all"] }
+tokio = { version = "1.50.0", features = ["full"] }

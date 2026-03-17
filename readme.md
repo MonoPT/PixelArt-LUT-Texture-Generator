@@ -2,7 +2,7 @@
 This is a program that takes multiple images as input and generates a base image and a LUT texture for each input image, allowing you to save some space for pixel art in your game.
 
 # Why i made this?
-I wanted to use [Universal LPC Spritesheet Character Generator](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/tree/master/spritesheets)] but every variation of the same sprite is repeated, making the size colossal.
+I wanted to use [Universal LPC Spritesheet Character Generator](https://github.com/LiberatedPixelCup/Universal-LPC-Spritesheet-Character-Generator/tree/master/spritesheets)] but every variation of the same sprite is repeated, making the size of the final bundle huge. Even more if you intend to use it for a character creation system.
 
 # How to use?
 + Compile the binary -> You must use Cargo build --release

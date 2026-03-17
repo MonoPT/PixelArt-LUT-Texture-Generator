@@ -12,3 +12,6 @@ I wanted to use [Universal LPC Spritesheet Character Generator](https://github.c
 
 # Requirements
 + Rust to compile the program
+
+# Examples
+Take a look at the examples folder to see the output of this program. It is bidirectional so the example serves for both commands but in reverse order. All the assets belong to the project mensioned above and their respective owners.

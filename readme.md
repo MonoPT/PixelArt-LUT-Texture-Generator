@@ -7,8 +7,8 @@ I wanted to use [Universal LPC Spritesheet Character Generator](https://github.c
 # How to use?
 + Compile the binary -> You must use Cargo build --release
 + run the binary with the arguments: 
-  - program.exe --input ./assets/input/example_1 --output ./assets/output/   ## This command turns every image inside the folder into a LUT texture and generates a base to swapp colors
-  - program.exe --base ./assets/output/base.png --lut-folder ./assets/output/lut/ --out-folder ./assets/output/sprite/    ## this command does the inverse. takes LUT textures and applies it to the base, generates the final image
+  - program.exe --input ./assets/input/example_1 --output ./assets/output/   **## This command turns every image inside the folder into a LUT texture and generates a base to swapp colors**
+  - program.exe --base ./assets/output/base.png --lut-folder ./assets/output/lut/ --out-folder ./assets/output/sprite/    **## this command does the inverse. takes LUT textures and applies it to the base, generates the final image**
 
 # Requirements
 + Rust to compile the program

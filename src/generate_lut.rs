@@ -161,8 +161,20 @@ pub fn create_ref_img(data: Vec<Vec<&str>>, skins: Vec<ImageRGBA>, save_location
             swap_img.set_pixel(idx_xl as u32, 1, real_col.to_owned());
         }
         
-        swap_img.save_inferred(format!("./assets/lut_{idx}.png")).unwrap();
+        let folder = format!("{}/lut/", save_location.to_string_lossy());
+        let file_name = format!("{}/_{}.png", folder, idx);
+        
+        let save_f = Path::new(&folder);
+        let save_l = Path::new(&file_name);
+                
+        if !save_f.exists() {
+            std::fs::create_dir_all(save_f).expect("Could not create LUT folder in output path");
+        }
+                
+        swap_img.save_inferred(save_l).unwrap();
     }
     
-    image.save_inferred(save_location).unwrap();
+    let path = format!("{}/base.png", save_location.to_string_lossy());
+    
+    image.save_inferred(Path::new(&path)).unwrap();
 }

@@ -5,6 +5,8 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0.102"
+clap = { version = "4.6.0", features = ["derive"] }
+image = "0.25.10"
 rand = "0.10.0"
 ril = { version = "0.10.3", features = ["all"] }
 tokio = { version = "1.50.0", features = ["full"] }

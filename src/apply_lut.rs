@@ -4,9 +4,7 @@ use std::collections::{HashMap};
 use ril;
 use ril::Rgba;
 
-pub fn apply_lut(source_path: &Path, lut_path: &Path, out_path: &Path) -> ril::Result<()> {
-    let source: Image<Rgba> = Image::open(source_path).unwrap();
-    let lut: Image<Rgba> = Image::open(lut_path).unwrap();
+pub fn apply_lut(source: Image<Rgba>, lut: Image<Rgba>, out_path: &Path) -> ril::Result<()> {
 
     let mut map = HashMap::new();
     for x in 0..lut.width() {
